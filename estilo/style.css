@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@400;500;600;700;800&family=Sriracha&display=swap');
+
+@font-face {
+    font-family: supermario;
+    src: url(../super_mario_256/SuperMario256.ttf) format(truetype);
+    font-weight: normal;
+}
+
+:root{
+    --font3:'Sriracha', cursive;
+    --font1:Verdana, Geneva, Tahoma, sans-serif;
+    --font2:supermario;
+}
+
+*{
+    margin:0px;
+    padding:0px;
+    font: size 1em;
+}
+
+html, body{
+    min-height: 100vh;
+    font-family:var(--font1);
+}
+
+header{
+    background-color:black;
+    color:white;
+    text-align:center;
+}
+header > h1{
+    padding-top:50px;
+    /*E aqui e para deixar as letras em mauscula mas as primeira letra fica maior*/
+    font-variant:small-caps;
+    /*E aqui e para deixa todas as letras em mauscula
+    text-transform:uppercase;*/
+    font-family:var(--font2);
+    font-size:10vw;
+}
+header > p{
+    padding-bottom:50px;
+}
+header a, footer a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+header a:hover, footer a:hover{
+    text-decoration:underline;
+}
+
+section{
+    padding-top:10vh;
+    padding-bottom:10vh;
+    /*E aqui e para dar espaçamento entre as linhas*/
+    line-height:2em;
+    padding-left:30px;
+    font-family:var(--font3);
+    font-size:3.5vw;
+}
+
+section.normal{
+    background-color:white;
+    color:black;
+}
+section.imagem{
+    background-color:rgba(0, 0, 0, 0.712);
+    color:white;
+    box-shadow:inset 3px 3px 6px 0px rgba(0, 0, 0, 0.541);
+}
+section.imagem > p{
+    display:inline-block;
+    padding:5px;
+    background-color:rgba(0, 0, 0, 0.521);
+    text-shadow: 2px 2px 2px black;
+}
+section > p{
+    padding-bottom:2em;
+}
+section#img01{
+    background-image:url(../imagem/im-761253.jpeg);
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:97vw 97vh;
+    background-attachment:fixed;
+}
+section#img02{
+    background-image:url(../imagem/81VxuVBN1cLcorte.jpg);
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+footer{
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:10px;
+}
